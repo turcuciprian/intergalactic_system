@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: CustomStepper(),
+        child: CustomStepper(stepsContent: [Text('Ftest'), Text('Ftest2')]),
       ),
     );
   }

@@ -38,6 +38,11 @@ class CustomStepperState extends State<CustomStepper> {
             children: fullStepperContent,
           ),
         ),
+        Expanded(
+          child: Container(
+            child: widget.stepsContent[step - 1],
+          ),
+        )
       ]),
     );
   }

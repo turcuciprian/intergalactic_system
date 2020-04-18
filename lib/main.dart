@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intergalactic_system/widgets/CustomStepper.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(),
+        child: CustomStepper(),
       ),
     );
   }

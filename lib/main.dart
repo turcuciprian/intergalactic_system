@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intergalactic_system/widgets/CustomStepper.dart';
+import 'package:intergalactic_system/data/Step.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,12 +32,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    CustomStep page1 = CustomStep(title: "Creaza Deviz", content: Text('Test basic content'));
+    CustomStep page2 = CustomStep(title: "Stabileste Ora", content: Text('Test2 content'));
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Center(
-        child: CustomStepper(stepsContent: [Text('Test'), Text('Test2')]),
+        child: CustomStepper(stepsContent: [page1, page2]),
       ),
     );
   }

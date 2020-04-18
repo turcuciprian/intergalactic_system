@@ -18,7 +18,7 @@ class CustomStepperState extends State<CustomStepper> {
     List<Widget> fullStepperContent = [];
     widget.stepsContent.asMap().forEach((index, item) {
       Color dynamicColor = step > index + 1 ? Colors.green : Colors.red;
-      dynamicColor = index + 1 <= step ?dynamicColor : Colors.grey;
+      dynamicColor = index + 1 <= step ? dynamicColor : Colors.grey;
       // add divider before each new item that's not the first one
       if (index != 0) {
         fullStepperContent.add(customDivider);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intergalactic_system/widgets/CreazaDeviz.dart';
 import 'package:intergalactic_system/widgets/CustomStepper.dart';
 import 'package:intergalactic_system/data/Step.dart';
 
@@ -32,8 +33,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    CustomStep page1 = CustomStep(title: "Creaza Deviz", content: Text('Test basic content'));
-    CustomStep page2 = CustomStep(title: "Stabileste Ora", content: Text('Test2 content'));
+    CustomStep page1 =
+        CustomStep(title: "Creaza Deviz", content: CreazaDeviz());
+    CustomStep page2 =
+        CustomStep(title: "Stabileste Ora", content: Text('Test2 content'));
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),

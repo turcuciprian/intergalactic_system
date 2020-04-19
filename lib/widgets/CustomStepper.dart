@@ -12,7 +12,7 @@ class CustomStepper extends StatefulWidget {
 class CustomStepperState extends State<CustomStepper> {
   @override
   Widget build(BuildContext context) {
-    int step = 2;
+    int step = 1;
     Widget customDivider = Expanded(
       child: Divider(height: 1.0, color: Colors.grey, thickness: 1.0),
     );
